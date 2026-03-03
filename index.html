@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orden Médica - Silla de Ruedas</title>
     <style>
-        /* Esto hace que el fondo sea gris claro y el texto esté centrado */
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             background-color: #f0f2f5; 
@@ -15,7 +14,6 @@
             min-height: 100vh; 
             margin: 0; 
         }
-        /* Esto es el cuadro blanco donde va el texto */
         .contenedor { 
             background: white; 
             padding: 30px; 
@@ -25,8 +23,9 @@
             width: 90%; 
             text-align: center; 
         }
-        h2 { color: #1a73e8; margin-bottom: 20px; }
-        /* Esto hace que el texto NO se vea todo de corrido */
+        /* Color del Título cambiado a #0e406a */
+        h2 { color: #0e406a; margin-bottom: 20px; }
+
         .texto-orden { 
             text-align: left; 
             line-height: 1.6; 
@@ -36,19 +35,22 @@
             padding: 15px; 
             border-radius: 8px; 
             border: 1px solid #ddd; 
-            white-space: pre-wrap; /* Mantiene los saltos de línea */
+            white-space: pre-wrap; 
         }
+        /* Color del Botón cambiado a #0e406a */
         .boton-copiar { 
             margin-top: 20px; 
-            background-color: #1a73e8; 
+            background-color: #0e406a; 
             color: white; 
             border: none; 
             padding: 12px 25px; 
             border-radius: 5px; 
             cursor: pointer; 
             font-weight: bold; 
+            transition: background-color 0.3s;
         }
-        .boton-copiar:hover { background-color: #1557b0; }
+        /* Efecto al pasar el mouse (un poco más claro para que se note el clic) */
+        .boton-copiar:hover { background-color: #155a91; }
     </style>
 </head>
 <body>
