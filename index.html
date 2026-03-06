@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orden Médica - Silla de Ruedas</title>
+    <title>Formulación - Silla de Ruedas</title>
     <style>
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
@@ -19,25 +19,25 @@
             padding: 30px; 
             border-radius: 12px; 
             box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
-            max-width: 500px; 
-            width: 90%; 
+            max-width: 600px; 
+            width: 95%; 
             text-align: center; 
         }
-        /* Color del Título cambiado a #0e406a */
         h2 { color: #0e406a; margin-bottom: 20px; }
 
         .texto-orden { 
             text-align: left; 
             line-height: 1.6; 
             color: #333; 
-            font-size: 16px; 
+            font-size: 15px; 
             background: #f9f9f9; 
-            padding: 15px; 
+            padding: 20px; 
             border-radius: 8px; 
             border: 1px solid #ddd; 
+            /* Esto permite que los saltos de línea del texto se vean en la web */
             white-space: pre-wrap; 
         }
-        /* Color del Botón cambiado a #0e406a */
+        
         .boton-copiar { 
             margin-top: 20px; 
             background-color: #0e406a; 
@@ -48,26 +48,41 @@
             cursor: pointer; 
             font-weight: bold; 
             transition: background-color 0.3s;
+            width: 100%;
+            font-size: 16px;
         }
-        /* Efecto al pasar el mouse (un poco más claro para que se note el clic) */
         .boton-copiar:hover { background-color: #155a91; }
     </style>
 </head>
 <body>
 
 <div class="contenedor">
-    <h2>Especificaciones de Silla</h2>
+    <h2>Formulación Médica</h2>
     
-    <div class="texto-orden" id="contenidoParaCopiar">Se ordena silla de ruedas neurológica sobremedida del paciente, con marco rígido en aluminio que soporte 136 Kg, con sistema de tránsito, sistema de basculación de -3°a 45° y reclinación de 90° a 125° manual para accionamiento por cuidador, espaldar alto reclinable, firme, con soporte cefálico ajustable y soportes laterales de tronco ajustables en altura, Apoyapiés individuales, graduables, elevables, desmontables y abatibles, con soporte de pies con ángulo graduable y kit de crecimiento, frenos tipo tambor para cuidador con mango ergonómico, ruedas traseras de 16 pulgadas macizas y delanteras de 7 pulgadas macizas, Con asiento firme, apoyabrazos individuales tipo escritorio ajustables en altura, con accesorios para lograr el debido posicionamiento del usuario: pechera y cinturón pélvico.</div>
+    <div class="texto-orden" id="contenidoParaCopiar">Se formula silla de ruedas basculante y reclinable, sobremedida según antropometría del paciente, con marco rígido en aluminio, con capacidad de soporte hasta 136 kg. Debe contar con sistema de basculación de -3° a 45° y reclinación de 90° a 125°, con accionamiento mediante manilar para cuidador.
 
-    <button class="boton-copiar" onclick="copiarTexto()">Copiar Texto</button>
+Espaldar alto reclinable, firme, con soporte cefálico ajustable en altura y profundidad, y soportes laterales de tronco ajustables en altura.
+
+Apoyapiés individuales, graduables, desmontables y ajustables en altura y ángulo.
+
+Incluye kit de crecimiento en la base de sedestación, ajustable en ancho y profundidad.
+
+Soporte pélvico ajustable.
+
+Frenos tipo tambor para cuidador, con mango ergonómico.
+
+Ruedas traseras macizas de 16 pulgadas y ruedas delanteras macizas de 7 pulgadas.
+
+Apoyabrazos individuales tipo escritorio, ajustables en altura y desmontables.</div>
+
+    <button class="boton-copiar" onclick="copiarTexto()">Copiar Formulación</button>
 </div>
 
 <script>
     function copiarTexto() {
         const texto = document.getElementById('contenidoParaCopiar').innerText;
         navigator.clipboard.writeText(texto).then(() => {
-            alert("¡Copiado con éxito!");
+            alert("¡Formulación copiada al portapapeles!");
         });
     }
 </script>
